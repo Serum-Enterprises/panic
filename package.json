@@ -1,0 +1,28 @@
+{
+  "name": "@serum-enterprises/panic",
+  "version": "1.0.0",
+  "description": "A rust-like panic function",
+  "main": "./build/index.js",
+  "types": "./types/index.d.ts",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Serum-Enterprises/panic.git"
+  },
+  "keywords": [
+    "panic",
+    "abort",
+    "halt",
+    "end",
+    "program"
+  ],
+  "author": "Philipp Steckenbauer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Serum-Enterprises/panic/issues"
+  },
+  "homepage": "https://github.com/Serum-Enterprises/panic#readme",
+  "devDependencies": {
+    "@types/node": "^22.5.0"
+  }
+}
