@@ -9,12 +9,14 @@ npm install @serum-enterprises/panic
 
 ## Usage
 
-This module exports a single function, `panic`, which takes a single argument, an exit code, and exits the process with that exit code after printing the thread id, ISO timestamp, and stack trace.
+This module exports a single function, `panic`, which takes an error and an optional exit code, and exits the process with the exit code after printing the thread id, ISO timestamp, and the given error.
 
 ```typescript
 import { panic } from '@serum-enterprises/panic';
 
-panic(1);
+const error = new Error('Something went wrong');
+
+panic(error, 1);
 ```
 
 ## License

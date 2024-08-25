@@ -1,7 +1,11 @@
 import { threadId } from "worker_threads";
 
-export function panic(errorCode: number = 1): never {
-	console.error(`Thread ${threadId} panicked at ${new Date().toISOString()}\n${new Error().stack?.split("\n").slice(1).join("\n")}`);
+/**
+ * Panics the Thread or Process with the given error.
+ */
+export function panic(error: Error, errorCode: number = 1): never {
+	console.error(`Thread ${threadId} panicked at ${new Date().toISOString()} with:`);
+	console.error(error.stack);
 
 	process.exit(errorCode);
 }

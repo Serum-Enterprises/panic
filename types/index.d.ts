@@ -1,1 +1,1 @@
-export declare function panic(errorCode?: number): never;
+export declare function panic(error: Error, errorCode?: number): never;
